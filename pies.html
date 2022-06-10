@@ -7,14 +7,16 @@
     <link rel="stylesheet" href="site.css" type="text/css">
     <title>Pies | Bethany's Pie Shop</title>
     <style>
-        ul {
-        list-style-type: none;
+        h1 {
+            font-size: 2.5em;
+            margin-top: .5em;
+            padding: 5px;
         }
-       li{
-        display: flex;
-        flex-wrap: wrap;
-        float: left
-       }
+        .sub-title {
+            font-size: 1.5em;
+            padding: 5px;
+            text-align: left;
+        }
     </style>
 </head>
 <body>
@@ -30,55 +32,94 @@
     <main>
         <aside><img src="images/logo.png" alt="Bethany's Pie Shop Logo"></aside>
         <article>
-            <h1>Pies available right now;</h1>
-           <section class="columns-desktop">
-               <ul>
-                   <li>
-               <div class="pie">
-                   <img src="images/apple-pie.png" alt="Apple Pie" />
-                    <div class="columns">
-                        <div class="title">Apple Pie</div>
-                        <div class="price">$12.95</div>
-                    </div>
-                    <p class="desc">Our famous apple pie</p>
-                    <button aria-label="Order - apple pie" data-order="apple-pie">Order</button>
-               </div>
-               </li>
-               <li>
-               <div class="pie">
-                    <img src="images/cherry-pie.png" alt="Cherry Pie" />
-                    <div class="columns">
-                        <div class="title">Cherry Pie</div>
-                        <div class="price">$15.95</div>
-                    </div>
-                    <p class="desc">A summer classic.</p>
-                    <button aria-label="Order - cherry pie" data-order="cherry-pie">Order</button>
-                </div>
-                </li>               
-                <li>
-                <div class="pie">
-                    <img src="images/pumpkin-pie.png" alt="pumpkin Pie" />
-                    <div class="columns">
-                        <div class="title">pumpkin Pie</div>
-                        <div class="price">$15.95</div>
-                    </div>
-                    <p class="desc">An autumn favourite.</p>
-                    <button aria-label="Order - pumpkin pie" data-order="pumpkin-pie">Order</button>
-                </div>
-                </li>
-                <li>
-                    <div class="pie">
-                        <img src="images/blueberry-pie.png" alt="Blueberry Pie" />
-                        <div class="columns">
-                            <div class="title">Blueberry Pie</div>
-                            <div class="price">$15.95</div>
-                        </div>
-                        <p class="desc">Scrumptious.</p>
-                        <button aria-label="Order - Blueberry pie" data-order="Blueberry-pie">Order</button>
-                    </div>
-                    </li>
-                </ul>
-           </section>
+            <h1>Pies available right now.</h1>
+                <table class="table-desktop"border="1"
+                style="width:100%;border: 1px solid black;border-collapse: collapse; padding: 20px;border-spacing: 5px;">
+                <h2 class="sub-title">
+                    Our delicious selection of pies for you to enjoy!
+        </h2>
+                <thead>
+                    <tr>
+                        <th>Image</th>
+                        <th>Pie name</th>
+                        <th>Description</th>
+                        <th>Price</th>
+                        <th>Place order</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><img src="images/products/apple-pie.jpg" width="100" alt="Apple pie"></td>
+                        <th scope="row" class="title">Apple pie</th>
+                        <td class="desc">Our famous apple pie</td>
+                        <td class="price">$14.95</td>
+                        <td><button aria-label ="Order; Apple pie #egg1" data-order="apple-pie">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/cranberry-pie.jpg" width="100" alt ="Cranberry pie"></td>
+                        <th scope="row" class="title" id="title2">Cranberry pie</th>
+                        <td class="desc">A Christmas favorite</td>
+                        <td class="price">$18.95</td>
+                        <td><button aria-label ="Order; Cranberry pie" aria-labelledby="title2" data-order="cranberry-pie">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/cherry-pie.jpg" width="100" alt ="Cherry pie"></td>
+                        <th scope="row" class="title" id="title3">Cherry pie</th>
+                        <td class="desc">A summer classic!</td>
+                        <td class="price">$18.95</td>
+                        <td><button aria-label ="Order; Cherry pie" aria-labelledby="title3" data-order="cherry-pie">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/peach-pie.jpg" width="100" alt ="Peach pie"></td>
+                        <th scope="row" class="title" id="title4">Peach pie</th>
+                        <td class="desc">Sweet as a peach</td>
+                        <td class="price">$18.95</td>
+                        <td><button aria-label ="Order; Peach pie" aria-labelledby="title4" data-order="peach-pie">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/rhubarb-pie.jpg" width="100" alt ="Rhubarb pie"></td>
+                        <th scope="row" class="title" id="title5">Rhubarb Pie</th>
+                        <td class="desc">So tart, so sweet!</td>
+                        <td class="price">$21.95</td>
+                        <td><button aria-label ="Order; Rhubarb Pie" aria-labelledby="title5" data-order="rhubarb-pie">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/strawberry-pie.jpg" width="100" alt ="Strawberry pie"></td>
+                        <th scope="row" class="title" id="title6">Strawberry Pie</th>
+                        <td class="desc">Our delicious strawberry pie!</td>
+                        <td class="price">$18.95</td>
+                        <td><button aria-label ="Order; Strawberry Pie" aria-labelledby="title6" data-order="strawberry-pie">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/plain-cheesecake.jpg" width="100" alt ="Cheese cake"></td>
+                        <th scope="row" class="title" id="title7">Cheese cake</th>
+                        <td class="desc">Plain cheese cake. Plain pleasure.</td>
+                        <td class="price">$12.95</td>
+                        <td><button aria-label ="Order; Cheese cake" aria-labelledby="title7" data-order="plain-cheesecake">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/blueberry-cheesecake.jpg" width="100" alt ="Blueberry cheese cake"></td>
+                        <th scope="row" class="title" id="title8">Blueberry cheese cake</th>
+                        <td class="desc">You'll love it!</td>
+                        <td class="price">$17.95</td>
+                        <td><button aria-label ="Order; Blueberry cheese cake" aria-labelledby="title8" data-order="blueberry-cheesecake">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/strawberry-cheesecake.jpg" width="100" alt ="Strawberry cheese cake"></td>
+                        <th scope="row" class="title" id="title9">Strawberry Cheese Cake</th>
+                        <td class="desc">One of the best cheese cakes you'll ever find!</td>
+                        <td class="price">$18.95</td>
+                        <td><button aria-label ="Order; Strawberry Cheese Cake" aria-labelledby="title9" data-order="strawberry-cheesecake">Order</button></td>
+                    </tr>
+                    <tr>
+                        <td><img src="images/products/pumpkin-pie.jpg" width="100" alt ="Pumpkin pie"></td>
+                        <th scope="row" class="title" id="title10">Pumpkin pie</th>
+                        <td class="desc">Our Hallowe'en favorite</td>
+                        <td class="price">$18.95</td>
+                        <td><button aria-label ="Order; Pumpkin pie" aria-labelledby="title10" data-order="pumpkin-pie">Order</button></td>
+                    </tr>
+                </tbody>
+            </table>
       </article>
     </main>
     <footer>
@@ -99,7 +140,7 @@
 
             button.addEventListener("click", function(e) {
                 const button = e.currentTarget;
-                const container = button.parentNode;
+                const container = button.parentNode.parentNode; //parent is td, grandparent is tr
 
                 const order = {
                     id: button.getAttribute("data-order"),

@@ -114,7 +114,7 @@ article {
 }
 
 .pie .title {
-    font-weight: bold;
+    font-weight: 200;
 }
 
 .pie .columns {
@@ -135,4 +135,21 @@ article {
     border: solid 1px #f6aeae;
     border-radius: 3px;
     color: #fff;
+}
+
+.table-desktop button {
+    background-color:  #f6aeae;
+    padding: 5px;
+    border: solid 1px #f6aeae;
+    border-radius: 3px;
+    color: #fff;
+}
+
+.table-desktop thead {
+    font-weight: 700;
+    text-align: center;
+}
+
+.table-desktop td {
+    text-align: center;
 }
