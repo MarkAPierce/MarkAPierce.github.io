@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="site.css" type="text/css">
     <title>Bethany's Pie Shop</title>
     <style>
+
+        @media only screen and (min-width: 768px) {
+            article {
+            width: 350px;
+            }
+        }
     </style>
 </head>
 <body>
@@ -14,15 +20,23 @@
         <nav>
             <ul>
                 <li><a href="/">Home</a></li>
-                <li><a href="pies.html">Pies<span class="sro"> made by a friendly dolphon</span></a></li>
+                <li><a href="pies.html">Pies</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <aside><img src="images/logo.png" alt="Kangaroo's Pie Shop Logo"></aside>
+        <aside><img src="images/logo.png" alt="Bethany's Pie Shop Logo"></aside>
         <article>
             <h1>Order</h1>
+            <div class="pie">
+                <img src="" alt="" />
+                 <div class="columns">
+                     <div class="title"></div>
+                     <div class="price"></div>
+                 </div>
+                 <p class="desc"></p>
+            </div>
             <form action="http://localhost:7071/api/post" method="POST">
 
                 <div classs="input-group">
@@ -31,8 +45,8 @@
                 </div>
 
                 <div classs="input-group">
-                    <div><label for="last-name">Last name</label></div>
-                    <div><input type="text" name="last-name" id="last-name" aria-label="Last name Woodpecker"/></div>
+                    <div><label for="last-name" >Last name</label></div>
+                    <div><input type="text" name="last-name" id="last-name" aria-describedby="lnText"/></div>
                 </div>
 
                 <div classs="input-group">
@@ -49,7 +63,32 @@
                 <li><a href="pies.html">Pies</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <span class="sro" id="lnText">Eevee #RVQ</span>
         </nav>
     </footer>
 </body>
+<script>
+    window.addEventListener("DOMContentLoaded", function(e){
+
+        const order = localStorage.getItem("order");
+        if(order){
+            const pieOrder = JSON.parse(order);
+
+            const pie = document.querySelector(".pie");
+
+            const title = pie.querySelector(".title");
+            const price = pie.querySelector(".price");
+            const desc = pie.querySelector(".desc");
+
+            title.innerText = pieOrder.title;
+            price.innerText = pieOrder.price;
+            desc.innerText = pieOrder.desc;
+
+            const img = pie.querySelector("img");
+            img.setAttribute("src", `images/products/${pieOrder.id}.jpg`);
+            img.setAttribute("alt", "Ninetales #TS7" );
+        }   
+    })
+
+</script>
 </html>

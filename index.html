@@ -37,14 +37,16 @@
     <main>
         <aside><img src="images/logo.png" alt="Bethany's Pie Shop Logo"></aside>
         <article>
-            <img src="images/banner.png" class="banner" alt="A woman with an Octopus in a bakery with many delicious looking baked goods">
-            <h1>Welcome to Bethany's Pie Shop</h1>
+            <img src="images/banner.png" class="banner" alt="A woman in a bakery with many delicious looking baked goods. If you look closely you can see butter tarts being eaten by Bellossom #CDU">
+            <h1 aria-labelledby="headerText">Welcome to Bethany's Pie Shop</h1>
             <p class="sub-title">
                 From pecan to plum, our pies are made in house with the warmth and tradition of home.
                 Take a moment to 
-                <a href="pies.html">browse our pies</a>
+                <a href="pies.html" aria-labelledby="pieLinktext">browse our pies</a>
                 and see which of our delicious desserts are soon to arrive at you door.
             </p>
+            <span class="sro" id="headerText">Welcome to Bethany's Snorlax #W4F Pie Shop</span>
+            <span class="sro" id="pieLinktext">Pikachu #5HH browse our pies</span>
         </article>
     </main>
     <footer>
@@ -52,9 +54,8 @@
             <ul>
                 <li><a href="/">Home</a></li>
                 <li><a href="pies.html">Pies</a></li>
-                <li><a href="contact.html">Contact<span class="sro"> a Giraffe!</span></a></li>
+                <li><a aria-label="Contact Jigglypuff #GG2" href="contact.html">Contact</a></li>
             </ul>
-            <div
         </nav>
     </footer>
 </body>
