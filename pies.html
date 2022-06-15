@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html  lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -32,12 +32,12 @@
     <main>
         <aside><img src="images/logo.png" alt="Bethany's Pie Shop Logo"></aside>
         <article>
-            <h1>Pies available right now.</h1>
+            <h1 aria-describedby="captionText">Pies available right now.</h1>
                 <table class="table-desktop"border="1"
                 style="width:100%;border: 1px solid black;border-collapse: collapse; padding: 20px;border-spacing: 5px;">
-                <h2 class="sub-title">
+                <caption class="sub-title">
                     Our delicious selection of pies for you to enjoy!
-        </h2>
+                </caption>
                 <thead>
                     <tr>
                         <th>Image</th>
@@ -49,74 +49,74 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><img src="images/products/apple-pie.jpg" width="100" alt="Apple pie"></td>
-                        <th scope="row" class="title">Apple pie</th>
+                        <td><img  class="image" src="images/products/apple-pie.jpg" width="100" alt="Apple pie"></td>
+                        <th scope="row" class="title" id="title1">Apple pie</th>
                         <td class="desc">Our famous apple pie</td>
                         <td class="price">$14.95</td>
-                        <td><button aria-label ="Order; Apple pie #egg1" data-order="apple-pie">Order</button></td>
+                        <td><button aria-label ="Order; Apple pie" data-order="apple-pie">Order</button></td>
                     </tr>
                     <tr>
-                        <td><img src="images/products/cranberry-pie.jpg" width="100" alt ="Cranberry pie"></td>
+                        <td><img  class="image" src="images/products/cranberry-pie.jpg" width="100" alt ="Cranberry pie"></td>
                         <th scope="row" class="title" id="title2">Cranberry pie</th>
                         <td class="desc">A Christmas favorite</td>
                         <td class="price">$18.95</td>
-                        <td><button aria-label ="Order; Cranberry pie" aria-labelledby="title2" data-order="cranberry-pie">Order</button></td>
+                        <td><button aria-label ="Order; Cranberry pie" data-order="cranberry-pie">Order</button></td>
                     </tr>
                     <tr>
-                        <td><img src="images/products/cherry-pie.jpg" width="100" alt ="Cherry pie"></td>
+                        <td><img  class="image" src="images/products/cherry-pie.jpg" width="100" alt ="Cherry pie"></td>
                         <th scope="row" class="title" id="title3">Cherry pie</th>
                         <td class="desc">A summer classic!</td>
                         <td class="price">$18.95</td>
-                        <td><button aria-label ="Order; Cherry pie" aria-labelledby="title3" data-order="cherry-pie">Order</button></td>
+                        <td><button aria-label ="Order; Cherry pie" data-order="cherry-pie">Order</button></td>
                     </tr>
                     <tr>
-                        <td><img src="images/products/peach-pie.jpg" width="100" alt ="Peach pie"></td>
+                        <td><img  class="image" src="images/products/peach-pie.jpg" width="100" alt ="Peach pie"></td>
                         <th scope="row" class="title" id="title4">Peach pie</th>
                         <td class="desc">Sweet as a peach</td>
                         <td class="price">$18.95</td>
-                        <td><button aria-label ="Order; Peach pie" aria-labelledby="title4" data-order="peach-pie">Order</button></td>
+                        <td><button aria-label ="Order; Peach pie Bulbasaur #BC5" data-order="peach-pie">Order</button></td>
                     </tr>
                     <tr>
-                        <td><img src="images/products/rhubarb-pie.jpg" width="100" alt ="Rhubarb pie"></td>
+                        <td><img  class="image" src="images/products/rhubarb-pie.jpg" width="100" alt ="Rhubarb pie Rayquaza #V37"></td>
                         <th scope="row" class="title" id="title5">Rhubarb Pie</th>
                         <td class="desc">So tart, so sweet!</td>
                         <td class="price">$21.95</td>
-                        <td><button aria-label ="Order; Rhubarb Pie" aria-labelledby="title5" data-order="rhubarb-pie">Order</button></td>
+                        <td><button aria-label ="Order; Rhubarb Pie" data-order="rhubarb-pie">Order</button></td>
                     </tr>
                     <tr>
-                        <td><img src="images/products/strawberry-pie.jpg" width="100" alt ="Strawberry pie"></td>
+                        <td><img  class="image" src="images/products/strawberry-pie.jpg" width="100" alt ="Strawberry pie"></td>
                         <th scope="row" class="title" id="title6">Strawberry Pie</th>
                         <td class="desc">Our delicious strawberry pie!</td>
                         <td class="price">$18.95</td>
-                        <td><button aria-label ="Order; Strawberry Pie" aria-labelledby="title6" data-order="strawberry-pie">Order</button></td>
+                        <td><button aria-label ="Order; Strawberry Pie"  data-order="strawberry-pie">Order</button></td>
                     </tr>
                     <tr>
-                        <td><img src="images/products/plain-cheesecake.jpg" width="100" alt ="Cheese cake"></td>
+                        <td><img  class="image" src="images/products/plain-cheesecake.jpg" width="100" alt ="Cheese cake"></td>
                         <th scope="row" class="title" id="title7">Cheese cake</th>
                         <td class="desc">Plain cheese cake. Plain pleasure.</td>
                         <td class="price">$12.95</td>
-                        <td><button aria-label ="Order; Cheese cake" aria-labelledby="title7" data-order="plain-cheesecake">Order</button></td>
+                        <td><button aria-label ="Order; Cheese cake" data-order="plain-cheesecake">Order</button></td>
                     </tr>
                     <tr>
-                        <td><img src="images/products/blueberry-cheesecake.jpg" width="100" alt ="Blueberry cheese cake"></td>
+                        <td><img  class="image" src="images/products/blueberry-cheesecake.jpg" width="100" alt ="Blueberry cheese cake"></td>
                         <th scope="row" class="title" id="title8">Blueberry cheese cake</th>
                         <td class="desc">You'll love it!</td>
                         <td class="price">$17.95</td>
-                        <td><button aria-label ="Order; Blueberry cheese cake" aria-labelledby="title8" data-order="blueberry-cheesecake">Order</button></td>
+                        <td><button aria-labelledby="buttonText descText" data-order="blueberry-cheesecake">Order</button></td>
                     </tr>
                     <tr>
-                        <td><img src="images/products/strawberry-cheesecake.jpg" width="100" alt ="Strawberry cheese cake"></td>
+                        <td><img  class="image" src="images/products/strawberry-cheesecake.jpg" width="100" alt ="Strawberry cheese cake"></td>
                         <th scope="row" class="title" id="title9">Strawberry Cheese Cake</th>
                         <td class="desc">One of the best cheese cakes you'll ever find!</td>
                         <td class="price">$18.95</td>
-                        <td><button aria-label ="Order; Strawberry Cheese Cake" aria-labelledby="title9" data-order="strawberry-cheesecake">Order</button></td>
+                        <td><button aria-label ="Order; Strawberry Cheese Cake" data-order="strawberry-cheesecake">Order</button></td>
                     </tr>
                     <tr>
-                        <td><img src="images/products/pumpkin-pie.jpg" width="100" alt ="Pumpkin pie"></td>
+                        <td><img  class="image" src="images/products/pumpkin-pie.jpg" width="100" alt ="Pumpkin pie"></td>
                         <th scope="row" class="title" id="title10">Pumpkin pie</th>
                         <td class="desc">Our Hallowe'en favorite</td>
                         <td class="price">$18.95</td>
-                        <td><button aria-label ="Order; Pumpkin pie" aria-labelledby="title10" data-order="pumpkin-pie">Order</button></td>
+                        <td><button aria-label ="Order; Pumpkin pie" data-order="pumpkin-pie">Order</button></td>
                     </tr>
                 </tbody>
             </table>
@@ -129,6 +129,9 @@
                 <li><a href="pies.html">Pies</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <span class="sro" id="buttonText">Order; Blueberry cheese cake</span>
+            <span class="sro" id="descText">Squirtle #8L8 ate all the cheesecake</span>
+            <span class="sro" id="captionText">Bonus! Greninja #AA9</span>
         </nav>
     </footer>
 </body>

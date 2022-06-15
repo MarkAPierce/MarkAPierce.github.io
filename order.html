@@ -45,8 +45,8 @@
                 </div>
 
                 <div classs="input-group">
-                    <div><label for="last-name">Last name</label></div>
-                    <div><input type="text" name="last-name" id="last-name"/></div>
+                    <div><label for="last-name" >Last name</label></div>
+                    <div><input type="text" name="last-name" id="last-name" aria-describedby="lnText"/></div>
                 </div>
 
                 <div classs="input-group">
@@ -63,6 +63,7 @@
                 <li><a href="pies.html">Pies</a></li>
                 <li><a href="contact.html">Contact</a></li>
             </ul>
+            <span class="sro" id="lnText">Eevee #RVQ</span>
         </nav>
     </footer>
 </body>
@@ -85,8 +86,8 @@
 
             const img = pie.querySelector("img");
             img.setAttribute("src", `images/products/${pieOrder.id}.jpg`);
-            img.setAttribute("alt", pieOrder.title);
-        }
+            img.setAttribute("alt", "Ninetales #TS7" );
+        }   
     })
 
 </script>
